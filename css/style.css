@@ -1311,7 +1311,7 @@ header .sound .equalizer .holder {
   transform: translateY(-35%);
   margin-left: 4%;
   display: flex;
-  -webkit-text-stroke-color: #000;;
+  -webkit-text-stroke-color: #fff;
   color: transparent;
 }
 .swiper-slider .swiper-slide .slide-inner .container .slide-btn {
