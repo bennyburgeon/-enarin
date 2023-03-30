@@ -145,7 +145,7 @@ section {
   height: 100%;
   position: absolute;
   bottom: 0;
-  background: #7028a2;
+  background: #0e0e0e;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -352,7 +352,7 @@ section {
   position: absolute;
   top: 0;
   transform: skewX(0);
-  background: #7028a2;
+  background: #0e0e0e;
 }
 .navigation-menu .bg-layers span:nth-child(1) {
   left: 0;
@@ -854,7 +854,7 @@ section {
         text-align: center;
 padding-top: 160px;
   position: relative;
-  background: #7028a2;
+  background: #0e0e0e;
 }
 .page-header .video-bg {
   width: 100%;
@@ -1508,7 +1508,7 @@ s .process span:before {
   display: flex;
   flex-wrap: wrap;
   padding: 90px 0 60px;
-  background: #7028a2;
+  background: #0e0e0e;
   color: #fff;
   position: relative;
 }
@@ -2388,7 +2388,7 @@ address p{
   flex-wrap: wrap;
   flex-direction: column;
   padding: 80px 0 35px;
-  background: #7028a2;
+  background: #0e0e0e;
   color: #fff;
 }
 .footer .footer-quote {
