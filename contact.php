@@ -1,3 +1,25 @@
+
+<?php 
+if(isset($_POST['submit'])){
+    
+    $to = "akhilbenny.7@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['name'];
+    $last_name = $_POST['surname'];
+    $subject = $_POST['subject'];
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message']. "\n\n  ThankYou for your Responce";
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,7 +47,7 @@
       <div class="layer"></div>
       <div class="layer"></div>
       <div class="layer"></div>
-      <div class="inner" data-tilt data-tilt-perspective="2000">
+      <div class="inner">
         <figure class="fadeInUp animated"><img src="images/preloader.gif" alt="Image"></figure><span class="typewriter" id="typewriter"></span>
       </div>
       <!-- end inner -->
@@ -99,103 +121,105 @@
       </div>
       <!-- end video-bg -->
       <div class="container">
-        <h1>Our Services</h1>
-        <p>TO CREATE A POWERFUL PROJECT ONCE, A BIT OF LUCK IS ENOUGH</p>
+        <h1>Hellow </h1>
+        <p>Send Us Your Enquiry</p>
       </div>
-      <!-- end left-side -->
       <div id="ScrolDwn" class="scroll-down">
         <small>SCROLL DOWN</small>
         <span></span>
       </div>
     </header>
-    <section class="news">
+    <!-- end header -->
+    <section class="hello">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="post single-post wow fadeIn">
-              <!-- end news-image -->
-              <div class="post-content">
-                <div class="inner">
-                  <h3 id="ServInTitle" class="post-title">
-                    <a href="#">Information Technology</a>
-                  </h3>
-                  <h6>ENARIN support customers with a wide range of cutting-edge technological solutions and are proud of the vast experience, skills, and certifications our software developers and testers possess.</h6>
-                  <h6>We have experienced tremendous growth proving ourselves as a reliable and recognized offshore software development company with IT professionals at your service. </h6>
-                </div>
-                <!-- end inner -->
-                <section class="news bg_grey">
-                  <div class="container">
-                    <div class="post ">
-                      <h6 class="Innerh6">Web & Mobile Applications </h6>
-                      <p class="ServInP">Creating a mobile app is as exciting as designing a website, and our expert team is fully capable of giving you something unique that will help grow your business. We are living in the age of connectivity, and that means more things than ever before are right at your fingertips. </p>
-                      <div id="PostCo" class="post-content wow fadeInLeft">
-                        <div class="inner AbtRight">
-                          <p class="ServInP">Here are some highlights of this process:</p>
-                          <b>
-                            <ul>
-                              <li>Functionality and content</li>
-                              <li>Wireframes, the structural core of your app</li>
-                              <li>Branding and integration of existing digital</li>
-                              <li>platforms (i.e., web and email)</li>
-                              <li>User Experience and User Interface, or UX and UI</li>
-                            </ul>
-                          </b>
-                        </div>
-                      </div>
-                      <figure class="post-image wow fadeInRight">
-                        <img src="images/service/service6.1.jpg" alt="Image">
-                      </figure>
-                    </div>
-                  </div>
-                </section>
-                <section class="news pb0">
-                  <div class="container">
-                    <div class="post wow fadeInLeft">
-                      <div>
-                        <h6 class="Innerh6">ERP & Software Development </h6>
-                        <p class="ServInP">Working with offshore developers doesn’t have to be stressful for your in-house team. You should be able to use the tools you like to manage and communicate with your software development team. That’s what our model is all about.</p>
-                      </div>
-                      <figure class="post-image wow fadeInLeft">
-                        <img src="images/service/service6.2.jpg" alt="Image">
-                      </figure>
-                      <div class="post-content wow fadeInRight">
-                        <div class="inner AbtLeft">
-                          <p class="ServInP">Flexibility and a 100% customized software development team is what you can expect from ENARIN.</p>
-                          <b>
-                            <ul>
-                              <li>Application Development </li>
-                              <li>Application maintenance </li>
-                              <li>Application modernization </li>
-                              <li>Testing and QA</li>
-                              <li>Co-Development </li>
-                              <li>Dedicated development teams </li>
-                            </ul>
-                          </b>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                  <div class="row">
-                  <div class="col-md-12 BAckSe">
-                    <div class="custom-link wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                      <a href="services.html">
-                        <div class="lines">
-                          <span></span>
-                          <span></span>
-                        </div>
-                        <!-- end lines -->
-                        <b>Back to Services</b>
-                      </a>
-                    </div>
-                  </div>   
-                 </div> 
-              </div>
-              <!-- end post-content -->
-            </div>
-            <!-- end pagination -->
+          <div class="col-12 wow fadeIn">
+            <h6>SMOOTH INTERFACE INTERACTION</h6>
+            <h2 data-text="Hellow">Come visit us and say hello !!</h2>
           </div>
           <!-- end col-12 -->
+          <div class="col-md-5 wow fadeIn">
+            <address>
+              <b>Get in Touch</b>
+              <p>ENARIN Business Solutions Pvt. Ltd, <br> Santhosh, Gandhi Nagar, Ernakulam, <br> Kochi – 17, Kerala, India. </p>
+            </address>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 wow fadeIn" data-wow-delay="0.05s">
+            <address>
+              <b>Call us</b>
+              <p>0091 484 401 67 35 <br>
+              <p>0091 858 900 30 00 <br>
+              </p>
+            </address>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-md-3 wow fadeIn" data-wow-delay="0.10s">
+            <address>
+              <b>Email us</b>
+              <a href="#">
+                <p>info@enarin.com</p>
+              </a>
+            </address>
+          </div>
+          <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeIn">
+            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Gandhi Nagar, Ernakulam&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="640" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- end map -->
+          </div>
+          <!-- end col-6 -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.05s">
+            <form class="row inner" action="" id="contact" name="contact" method="post">
+              <div class="form-group col-sm-6 col-12">
+                <label>
+                  <span>Your name</span>
+                </label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group col-sm-6 col-12">
+                <label>
+                  <span>Your surname</span>
+                </label>
+                <input type="text" name="surname" id="surname" required>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group col-sm-6 col-12">
+                <label>
+                  <span>Your e-mail</span>
+                </label>
+                <input type="text" name="email" id="email" required>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group col-sm-6 col-12">
+                <label>
+                  <span>Subject</span>
+                </label>
+                <input type="text" name="subject" id="subject" required>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group col-12">
+                <label>
+                  <span>Your message</span>
+                </label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group col-12">
+                <button id="submit" type="submit" name="submit">SUBMIT</button>
+              </div>
+              <!-- end form-group -->
+            </form>
+            <!-- end form -->
+            <div id="success" class="alert alert-success" role="alert"> Your message was sent successfully! We will be in touch as soon as we can. </div>
+            <!-- end success -->
+            <div id="error" class="alert alert-danger" role="alert"> Something went wrong, try refreshing and submitting the form again. </div>
+            <!-- end error -->
+          </div>
+          <!-- end col-6 -->
         </div>
         <!-- end row -->
       </div>
