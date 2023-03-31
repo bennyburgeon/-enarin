@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    $responce= "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
@@ -121,7 +121,7 @@ if(isset($_POST['submit'])){
       </div>
       <!-- end video-bg -->
       <div class="container">
-        <h1>Hellow </h1>
+        <h1>Hello </h1>
         <p>Send Us Your Enquiry</p>
       </div>
       <div id="ScrolDwn" class="scroll-down">
@@ -172,8 +172,12 @@ if(isset($_POST['submit'])){
           </div>
           <!-- end col-6 -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.05s">
+            <?php if($responce){
+                echo $responce;
+            }?>
             <form class="row inner" action="" id="contact" name="contact" method="post">
-              <div class="form-group col-sm-6 col-12">
+              
+            <div class="form-group col-sm-6 col-12">
                 <label>
                   <span>Your name</span>
                 </label>
