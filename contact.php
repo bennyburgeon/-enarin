@@ -42,14 +42,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-    <div class="preloader">
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="inner">
-        <figure class="fadeInUp animated"><img src="images/preloader.gif" alt="Image"></figure><span class="typewriter" id="typewriter"></span>
-      </div>
+    
       <!-- end inner -->
     </div>
     <!-- end preloader --><div class="transition-overlay">
@@ -66,7 +59,7 @@ if(isset($_POST['submit'])){
         <span></span>
       </div>
       <!-- end bg-layers -->
-      <div class="inner" data-tilt data-tilt-perspective="2000">
+      <div class="inner" >
         <div class="menu">
           <ul>
             <li>
@@ -82,7 +75,7 @@ if(isset($_POST['submit'])){
               <a href="business-projects.html">Business Projects </a>
             </li>
             <li>
-              <a href="contact.php">Contact us</a>
+              <a href="contact.php">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -156,7 +149,7 @@ if(isset($_POST['submit'])){
           <!-- end col-4 -->
           <div class="col-md-3 wow fadeIn" data-wow-delay="0.10s">
             <address>
-              <b>Email us</b>
+              <b>Email Us</b>
               <a href="#">
                 <p>info@enarin.com</p>
               </a>
