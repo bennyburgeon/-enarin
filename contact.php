@@ -28,8 +28,8 @@ if(isset($_POST['submit'])){
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#e8293b" />
     <meta name="HandheldFriendly" content="true" />
-    <title>ENARIN Business Solutions</title>
-    <meta name="description" content="ENARIN Business Solutions">
+    <title>ENARIN Business</title>
+    <meta name="description" content="ENARIN Business">
     <meta name="keywords" content="">
     <link href="images/title-logo.jpg" rel="shortcut icon">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -259,19 +259,19 @@ if(isset($_POST['submit'])){
             <div class="col-lg-6 footSocial">
               <h5>Connect with us : </h5>
               <ul>
-                <li>
-                  <a target="blank" href="https://www.facebook.com/enarinbusiness">Facebook</a>
-                </li>
-                <li>
-                  <a target="blank" href="https://www.linkedin.com/company/enarin">LinkedIn </a>
-                </li>
-                <li>
-                  <a target="blank" href="https://www.instagram.com/enarin_business">Instagram </a>
-                </li>
-                <li>
-                  <a target="blank" href="https://www.youtube.com/@enarinbusiness">YouTube </a>
-                </li>
-              </ul>
+          <li>
+            <a onclick='window.open("https://www.facebook.com/enarinbusiness");return false;' >Facebook</a>
+          </li>
+          <li>
+            <a onclick='window.open("https://www.linkedin.com/company/enarin");return false;' >LinkedIn </a>
+          </li>
+          <li>
+            <a onclick='window.open("https://www.instagram.com/enarin_business");return false;' >Instagram</a>
+          </li>
+          <li>
+            <a onclick='window.open("https://www.youtube.com/@enarinbusiness");return false;' >YouTube</a>
+          </li>
+        </ul>
             </div>
           </div>
         </div>
